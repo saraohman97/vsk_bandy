@@ -45,7 +45,7 @@ const HomeNavbar = () => {
               SHOP
             </Button>
           </Link>
-          <MainButton variant="white">VSK BANDY PLAY</MainButton>
+          <MainButton variant="white" href={'https://www.vskbandyplay.se'}>VSK BANDY PLAY</MainButton>
         </div>
 
         {/* Logo */}
