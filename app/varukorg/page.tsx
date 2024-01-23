@@ -10,7 +10,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { ArrowLeft, ArrowLeftToLine } from "lucide-react";
 import Image from "next/image";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
@@ -18,7 +17,7 @@ const CartPage = () => {
   return (
     <>
       <Navbar />
-      <div className="p-10 max-w-screen-xl mx-auto">
+      <div className="p-10 max-w-screen-xl mx-auto -mt-10">
         <Heading>VARUKORG</Heading>
 
         <Table>
@@ -42,9 +41,9 @@ const CartPage = () => {
               </TableCell>
               <TableCell>200 KR</TableCell>
               <TableCell className="text-center space-x-1">
-                <Button variant='outline'>-</Button>
-                <Button variant='default'>1</Button>
-                <Button variant='outline'>+</Button>
+                <Button variant="outline">-</Button>
+                <Button variant="default">1</Button>
+                <Button variant="outline">+</Button>
               </TableCell>
               <TableCell className="text-right">200 KR</TableCell>
             </TableRow>
@@ -52,10 +51,14 @@ const CartPage = () => {
         </Table>
 
         <div className="flex flex-col text-right items-end gap-2">
-            <h2 className="text-lg">Totala kostnaden: 200 KR</h2>
-            <small className="mb-4 text-slate-400">Taxes and shipping colculated at checkout.</small>
-            <Button>Betala</Button>
-            <Button variant='link'><FaArrowLeftLong className="text-gray-700 mr-2" /> Fortsätt shoppa</Button>
+          <h2 className="text-lg">Totala kostnaden: 200 KR</h2>
+          <small className="mb-4 text-slate-400">
+            Taxes and shipping colculated at checkout.
+          </small>
+          <Button>Betala</Button>
+          <Button variant="link">
+            <FaArrowLeftLong className="text-gray-700 mr-2" /> Fortsätt shoppa
+          </Button>
         </div>
       </div>
     </>

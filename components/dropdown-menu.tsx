@@ -25,14 +25,14 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ links }) => {
           <Link
             key={link.name}
             href={link.href}
-            className="hover:bg-green-700/20 px-4 py-3 w-full text-start transition-all relative group"
+            className="hover:bg-green-700/20 px-4 py-3 w-full text-start relative group"
           >
             {link.name}
             {link.historyLinks && (
               <div className="invisible group-hover:visible absolute top-0 -right-[100%] z-50 min-w-40 bg-white border rounded text-black flex flex-col items-start shadow">
                 {link.historyLinks.map((historyLink) => (
                   <div
-                    className="hover:bg-green-700/20 px-4 py-3 w-full text-start transition-all"
+                    className="hover:bg-green-700/20 px-4 py-3 w-full text-start"
                     key={historyLink.name}
                   >
                     {historyLink.name}

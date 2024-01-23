@@ -115,7 +115,7 @@ const ShopPage = () => {
                     <SelectItem value="2xl">2X large</SelectItem>
                   </SelectContent>
                 </Select>
-                <Button className="w-fit invisible group-hover:visible">Köp</Button>
+                <Link href='/varukorg'><Button className="w-fit invisible group-hover:visible">Köp</Button></Link>
               </div>
             </div>
           ))}
