@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "./ui/button";
-import MainButton from "./main-button";
+import MainButton from "./button";
 import Link from "next/link";
 import { useState } from "react";
 import DropdownMenu from "./dropdown-menu";

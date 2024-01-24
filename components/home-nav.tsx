@@ -1,6 +1,6 @@
 'use client'
 
-import MainButton from "@/components/main-button";
+import MainButton from "@/components/button";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -93,7 +93,7 @@ export default HomeNavbar;
 const links = [
   {
     name: "BILJETTER OCH PRISER",
-    href: "/",
+    href: "/biljetter-och-priser",
   },
   {
     name: "SPELSCHEMA",

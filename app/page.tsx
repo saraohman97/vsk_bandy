@@ -8,7 +8,9 @@ export default function Home() {
     <>
       <HomeNavbar />
       <div className="p-5 max-w-[1200px] mx-auto">
-        <Heading>NÄSTA MATCH</Heading>
+        <div className="ml-8">
+          <Heading>NÄSTA MATCH</Heading>
+        </div>
         <div className="bg-green-800/90 text-white p-10 relative rounded-3xl">
           <Image
             src="/bg.jpg"
@@ -62,7 +64,9 @@ export default function Home() {
       </div>
 
       <div className="p-5 max-w-screen-xl mx-auto">
-        <Heading>VAD HÄNDE I VECKAN</Heading>
+        <div className="ml-8">
+          <Heading>VAD HÄNDE I VECKAN</Heading>
+        </div>
         <div className="flex items-center w-full gap-4">
           {articles?.map((item) => (
             <div key={item.id} className="flex flex-col text-green-700">
@@ -95,7 +99,9 @@ export default function Home() {
       </div>
 
       <div className="p-5 max-w-screen-xl mx-auto">
-        <Heading>DIAMANT- OCH GULDPARTNERS</Heading>
+        <div className="ml-8">
+          <Heading>DIAMANT- OCH GULDPARTNERS</Heading>
+        </div>
         <div className="flex items-center justify-around gap-10">
           {partners?.map((item) => (
             <Image

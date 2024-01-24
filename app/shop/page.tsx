@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Breadcrumbs from "@/components/breadcrumbs";
 
 const products = [
   {
@@ -57,13 +58,7 @@ const ShopPage = () => {
     <>
       <Navbar />
       <div className="p-10 max-w-screen-xl mx-auto">
-        <div className="flex items-center gap-2 text-green-700 text-xs font-semibold">
-          <Link href="/" className="hover:underline">
-            VIK
-          </Link>
-          <GoChevronRight size={20} />
-          <div>SHOP</div>
-        </div>
+        <Breadcrumbs>SHOP</Breadcrumbs>
 
         {/* Filtering */}
         <div className="flex items-center gap-4 pt-10">
@@ -86,8 +81,8 @@ const ShopPage = () => {
           {products?.map((product) => (
             <div key={product.id} className="relative group">
               <div className="invisible group-hover:visible top-0 flex ">
-              <FaInstagram className="m-2 cursor-pointer" size={20} />
-          <FaFacebookF className="m-2 cursor-pointer" size={20} />
+                <FaInstagram className="m-2 cursor-pointer" size={20} />
+                <FaFacebookF className="m-2 cursor-pointer" size={20} />
               </div>
               <Image
                 src={product.image}
@@ -115,7 +110,11 @@ const ShopPage = () => {
                     <SelectItem value="2xl">2X large</SelectItem>
                   </SelectContent>
                 </Select>
-                <Link href='/varukorg'><Button className="w-fit invisible group-hover:visible">Köp</Button></Link>
+                <Link href="/varukorg">
+                  <Button className="w-fit invisible group-hover:visible">
+                    Köp
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}
